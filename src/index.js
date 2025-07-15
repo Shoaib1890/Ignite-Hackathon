@@ -1,15 +1,15 @@
-// Enhanced product data with categories and descriptions
+// Enhanced product data with categories, descriptions, and images
 const products = [
-    { id: "product1", name: "Premium Running Shoes", desc: "Lightweight, breathable running shoes with advanced cushioning technology.", price: 2999, category: "fashion" },
-    { id: "product2", name: "Stylish Baseball Cap", desc: "Comfortable cotton cap with adjustable strap, perfect for casual wear.", price: 899, category: "fashion" },
-    { id: "product3", name: "Smart Fitness Watch", desc: "Track your fitness goals with this feature-packed smartwatch.", price: 12999, category: "electronics" },
-    { id: "product4", name: "Travel Backpack", desc: "Durable, spacious backpack perfect for travel and daily use.", price: 2499, category: "accessories" },
-    { id: "product5", name: "Polarized Sunglasses", desc: "UV protection sunglasses with polarized lenses for clear vision.", price: 1899, category: "accessories" },
-    { id: "product6", name: "Cotton T-Shirt", desc: "Soft, comfortable cotton t-shirt available in multiple colors.", price: 799, category: "fashion" },
-    { id: "product7", name: "Gaming Laptop", desc: "High-performance laptop with dedicated graphics card for gaming.", price: 89999, category: "electronics" },
-    { id: "product8", name: "Smartphone", desc: "Latest smartphone with advanced camera and long-lasting battery.", price: 24999, category: "electronics" },
-    { id: "product9", name: "Professional Camera", desc: "DSLR camera with interchangeable lenses for photography enthusiasts.", price: 49999, category: "electronics" },
-    { id: "product10", name: "Wireless Headphones", desc: "Noise-cancelling wireless headphones with premium sound quality.", price: 4999, category: "electronics" },
+    { id: "product1", name: "Premium Running Shoes", desc: "Lightweight, breathable running shoes with advanced cushioning technology.", price: 2999, category: "fashion", image: "/public/shoes.jpeg" },
+    { id: "product2", name: "Stylish Baseball Cap", desc: "Comfortable cotton cap with adjustable strap, perfect for casual wear.", price: 899, category: "fashion", image: "/public/cap.jpeg" },
+    { id: "product3", name: "Smart Fitness Watch", desc: "Track your fitness goals with this feature-packed smartwatch.", price: 12999, category: "electronics", image: "/public/smartwatch.jpeg" },
+    { id: "product4", name: "Travel Backpack", desc: "Durable, spacious backpack perfect for travel and daily use.", price: 2499, category: "accessories", image: "/public/bagpack.jpeg" },
+    { id: "product5", name: "Polarized Sunglasses", desc: "UV protection sunglasses with polarized lenses for clear vision.", price: 1899, category: "accessories", image: "/public/sunglasses.jpeg" },
+    { id: "product6", name: "Cotton T-Shirt", desc: "Soft, comfortable cotton t-shirt available in multiple colors.", price: 799, category: "fashion", image: "/public/tshirt.jpeg" },
+    { id: "product7", name: "Gaming Laptop", desc: "High-performance laptop with dedicated graphics card for gaming.", price: 89999, category: "electronics", image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80" },
+    { id: "product8", name: "Smartphone", desc: "Latest smartphone with advanced camera and long-lasting battery.", price: 24999, category: "electronics", image: "/public/smartphone.jpeg" },
+    { id: "product9", name: "Professional Camera", desc: "DSLR camera with interchangeable lenses for photography enthusiasts.", price: 49999, category: "electronics", image: "/public/camera.jpeg" },
+    { id: "product10", name: "Wireless Headphones", desc: "Noise-cancelling wireless headphones with premium sound quality.", price: 4999, category: "electronics", image: "/public/headphone.jpeg" },
 ];
 
 // Cart management
@@ -84,6 +84,9 @@ function renderProducts(searchTerm = '') {
         productCard.style.animationDelay = `${index * 0.1}s`;
         
         productCard.innerHTML = `
+            <div class="product-image-container">
+                <img class="product-image" src="${product.image}" alt="${product.name}">
+            </div>
             <div class="product-name">${product.name}</div>
             <div class="product-price">₹${product.price.toLocaleString()}</div>
             <div class="product-description">${product.desc}</div>

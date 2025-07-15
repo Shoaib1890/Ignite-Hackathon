@@ -40,8 +40,7 @@
 ---
 
 ## Optional Enhancements (Ideas)
-- Add product images.
-- Implement quantity adjustment in cart.
+- Implement Backend and add a database to keep the track
 - Add checkout simulation.
 - Persist cart across sessions with better UX.
 
