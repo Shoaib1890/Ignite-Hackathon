@@ -63,7 +63,7 @@ const products = [
     desc: "Latest smartphone with advanced camera and long-lasting battery.",
     price: 24999,
     category: "electronics",
-    image: "/public/smartphone.jpeg",
+    image: "/smartphone.jpeg",
   },
   {
     id: "product9",
