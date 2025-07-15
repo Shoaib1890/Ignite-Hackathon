@@ -4,7 +4,7 @@
 
 1. Clone the repository:
    ```
-   git clone <your-repo-url>
+   git clone https://github.com/Shoaib1890/Ignite-Hackathon.git
    cd Ignite-Hackathon
    ```
 2. Open `src/index.html` in your browser (no build step required).
