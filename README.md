@@ -12,28 +12,30 @@
 ---
 
 ## List of Bugs Fixed
-- Cart initialization and localStorage logic fixed (cart now loads/saves correctly).
-- Search/filter is now case-insensitive and fully functional.
-- Product detail rendering fixed; add-to-cart button works for all products.
-- All event listeners are present and functional.
-- Product descriptions added for all products.
-- Cart UI implemented (view, add, remove items, total calculation).
-- Redundant/incorrect HTML tags removed.
+- Cart Initialization — Fixed cart load/save logic via localStorage.
+- Search/Filter Logic — Now case-insensitive and accurate.
+- Product Details Page — Dynamic rendering and working “Add to Cart” buttons.
+- Broken Event Listeners — Now fully functional across components.
+- Missing Content — Added product descriptions and corrected HTML issues.
+- Cart Modal — Functional and interactive UI (view/add/remove items, calculate total).
+- Code Cleanup — Removed redundant tags and improved readability.
 
 ## Enhancements Made
-- Modern, responsive UI/UX with improved color contrast and spacing.
-- Product cards and buttons have clear hover/active states.
-- Cart modal is visually distinct and mobile-friendly.
-- Cart button is highlighted for easy access.
-- Layout adapts to mobile/tablet/desktop screens.
+- Modern & Responsive UI — Optimized layout for mobile, tablet, and desktop.
+- Clean Visuals — Improved spacing, color contrast, and typography.
+- Interactive Cart — Clear hover/active states, highlighted cart button.
+- Mobile Friendliness — Modal and layout adapt gracefully to small screens.
+- Code Modularity — Refactored JS for easier debugging and extension.
 
 ## AI Tools Used & Contributions
 - **ChatGPT (OpenAI):**
-  - Debugged and fixed JavaScript logic for cart, search, and event handling.
-  - Generated product descriptions and improved UI/UX design.
-  - Suggested and implemented responsive CSS and modern design patterns.
-  - Provided code refactoring for maintainability and clarity.
-  - Guided the step-by-step transformation and documented all changes.
+  - Debugged JavaScript logic (cart handling, filter issues, event binding).
+  - Helped write product descriptions and clean up messy code.
+  - Suggested responsive layout patterns and design improvements.
+  - Refactored messy/duplicate logic for clarity and maintainability.
+- **Claude (Anthropic):**
+  - Used to guide structure of the HTML and semantic fixes.
+  - Suggested cleaner component layout and accessibility improvements.
 
 ---
 
